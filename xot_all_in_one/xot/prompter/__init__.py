@@ -1,4 +1,3 @@
-# Copyright (c) Microsoft Corporation.
 # Licensed under the MIT license.
 
 from .prompter_cube import CubePrompter

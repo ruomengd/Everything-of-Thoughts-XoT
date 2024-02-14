@@ -1,4 +1,3 @@
-# Copyright (c) Microsoft Corporation.
 # Licensed under the MIT license.
 
 npuzzle_instruct = """You are a virtual expert in solving a 8-puzzle problrm. Please follow the instructions and rules below to complete the solving.

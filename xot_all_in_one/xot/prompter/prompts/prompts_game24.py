@@ -1,4 +1,3 @@
-# Copyright (c) Microsoft Corporation.
 # Licensed under the MIT license.
 
 game24_instruct = '''
@@ -203,10 +202,10 @@ Steps:
 [Steps 2] 24 - 10 = 14 (left: 9 14) Expression: 9, ((12) * (2)) - (10)
 [Steps 3] 9 + 14 = 23 (left: 23) Expression: (9) + ((12) * (2)) - (10)
 The Steps are wrong. Because it can not reach 24 in the end. To be specific, 23 is not equal to 24.
-[Steps 2] is wrong. Because it is impossible to reach 24 from the step 2. After Step 2, left numbers are 9, 13. 
-9 + 13 = 22
-9 * 13 = 111
-9 -  13 = -4
+[Steps 2] is wrong. Because it is impossible to reach 24 from the step 2. After Step 2, left numbers are 9, 14. 
+9 + 14 = 23
+9 * 14 = 126
+9 -  14 = -5
 It is impossible to reach 24 from [Steps 2].
 
 Input: 4 9 10 13

@@ -9,20 +9,6 @@
  
 This repository contains the implementation of our novel thought prompting approach, **"Everything of Thoughts" (XoT)**. XoT combines pretrained reinforcement learning and Monte Carlo Tree Search (MCTS) to incorporate external domain knowledge into thoughts, thereby enhancing Large Language Models' (LLMs) capabilities and enabling them to generalize to unseen problems efficiently. This approach is designed to address the limitations of existing thought paradigms, particularly the "Penrose triangle" issue which suggests that a thought can at most exhibit two attributes out of performance, efficiency, and flexibility.
 
-## Set Up
- 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-1. In order to use the framework, you need to have access to an GPT. Set up OpenAI API key and store in environment variable OPENAI_API_KEY ([see here](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety)).
-
-2. Clone the repository and install the required packages.
-```bash
-git clone https://github.com/microsoft/Everything-of-Thoughts-XoT.git 
-cd Everything-of-Thoughts-XoT
-conda create -n xot python=3.8
-conda activate xot
-pip install -r requirements.txt  
-```
 
 ## Training
  
@@ -142,41 +128,10 @@ model:
 We evaluated XoT on both single-solution and multi-solution problem-solving tasks. Our results demonstrate that XoT significantly outperforms existing approaches in various dimensions, showcasing its remarkable proficiency in addressing complex problems across diverse domains. All the paper results can be found in `./xot_all_in_one/experiments/`.
 
 
-## Citations
-Your support would be greatly appreciated if you find XoT interesting or useful. Please acknowledge our work by citing the paper and giving this repository a star. For any inquiries, don't hesitate to contact us at rmding@gatech.edu or simply open an issue. Thank you!
-
-Paper link: https://arxiv.org/abs/2311.04254.
-
-```
-@article{ding2023thoughts,
-      title={Everything of Thoughts: Defying the Law of Penrose Triangle for Thought Generation}, 
-      author={Ruomeng Ding and Chaoyun Zhang and Lu Wang and Yong Xu and Minghua Ma and Wei Zhang and Si Qin and Saravan Rajmohan and Qingwei Lin and Dongmei Zhang},
-      year={2023},
-      journal={arXiv preprint arXiv:2311.04254},
-}
-```
 
 
-## Contributing
 
-This project welcomes contributions and suggestions. Most contributions require you to
-agree to a Contributor License Agreement (CLA) declaring that you have the right to,
-and actually do, grant us the rights to use your contribution. For details, visit
-https://cla.microsoft.com.
-
-When you submit a pull request, a CLA-bot will automatically determine whether you need
-to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the
-instructions provided by the bot. You will only need to do this once across all repositories using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)
-or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ## License
  
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-
-## Trademarks 
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow Microsoft’s Trademark & Brand Guidelines. Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party’s policies.
+This project is licensed under the MIT License. 
